@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ===== BASIC SETUP ===== */
+* {
+    font-family: 'Roboto', 'Helvetica', 'Arial','San Serif'; 
+    text-decoration: none;
+    
+    margin: 0px;
+    padding: 0px;
+    
+    box-sizing: border-box;
+    
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+
+html {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    text-align: left;
+    
+    background-color: #fff;  
+}
+
+section {
+	margin: auto;
+    padding: 100px 250px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+
+
+.top, .mid, .bot { padding: 10px 30px;}
+
+.top {
+	background-color: #565656;
+	display: none;
+}
+
+
+.mid {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	margin: 45px 0px 10px 0px;
+	height: 70px;
+	width: 100%;
+}
+.slogan { margin-left: 50px; }
+.logo { height: 100%;}
+.location { margin-left: auto; text-align: right; }
+
+#open, #close { font-weight: 600; }
+#open { color: green; }
+#close { color: red; }
+
+
+.bot {
+	background-color: #2A2A2A;
+	color: #fff;
+}
+.bot ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.bot ul li {
+	margin-right: 5%;
+}
