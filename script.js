@@ -1,4 +1,4 @@
-// JavaScript Document
+// Open Hours
 var date, time, a, b, i;
 
 a = 1000;
@@ -27,3 +27,36 @@ function replace() {
 }
 
 replace();
+
+// Google Maps
+var map;
+var prime = {lat: 40.712227, lng: -73.769407};
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: prime,
+    zoom: 18
+  });
+  
+  map.setOptions({styles: styles['hide']});
+  
+  marker = new google.maps.Marker({
+  	map: map,
+    draggable: false,
+    animation: google.maps.Animation.DROP,
+    position: prime
+  });
+  
+  marker.addListener('click', toggleBounce);
+}
+
+  
+  
+var styles = {
+  hide: [
+    {
+      featureType: 'poi',
+      elementType: 'labels.icon',
+      stylers: [{visibility: 'off'}]
+    }
+  ]
+};
