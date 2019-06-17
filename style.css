@@ -46,10 +46,15 @@ section {
 .policy ul { padding: 20px 40px }
 .policy ul li { list-style: square; }
 
-.container-s0, .container-s1 {
+.container-s0, .container-s1{
 	width: 100%;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+}
+.container-s2 {
+	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 }
 .container-s0 div img {
@@ -62,23 +67,26 @@ section {
 .container-s0 { height: 300px; }
 .container-s1 { margin-top: 20px; }
 
-.block-s0 {
+.block-s0, .block-s1 {
 	width: 300px;
-	padding: 10px;
 	margin-right: 2%;
 	margin-bottom: 20px;
 	background-color: #F1F1F1;
+	overflow: hidden;
+	border: 10px solid #F1F1F1; 
 	
 	display: flex;
 	flex-direction: column;
 	align-content: space-around;
 }
+.block-s1 { width: 100%; flex-direction: row; flex-wrap: wrap; }
 .block-s0 .nestedblock { margin: auto; margin-left: 0px; margin-bottom: 5px; }
 .block-s0:last-of-type { margin-right: 0px;}
 .block-s0 img { 
 	height: 200px;
 	margin: auto; margin-top: 0px; margin-bottom: 20px;
 }
+.block-s1 img { height: 200px; margin: 5px; }
 .block-s0 a { 
 	justify-content: flex-end; 
 }
